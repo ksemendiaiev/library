@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div id="books-container" class="books-container"></div>
+<div class="new-books">
+    <dialog id="dialog">
+        <form method="dialog">
+            <div class="dialog-modal">
+                <div>
+                    <p>
+                        <label for="titleBookInput">Title: </label>
+                        <input id="titleBookInput" type="text" required/>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="authorInput">Author:</label>
+                        <input id="authorInput" type="text" required/>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="genreInput">Genre: </label>
+                        <input id="genreInput" type="text" required/>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <input id="isRead" type="checkbox" required/>
+                        <label for="isRead">Read?</label>
+                    </p>
+                </div>
+                <input type="submit" id="js-close" value="Add the Book"/>
+            </div>
+        </form>
+    </dialog>
+    <p>
+        <button id="show-dialog"> Add The New Book</button>
+    </p>
+</div>
+<script src="App.js"></script>
+
+</body>
+</html>

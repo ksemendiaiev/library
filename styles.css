@@ -1,0 +1,73 @@
+
+
+
+.books-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 9%;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    align-items: center;
+    background-color: cornsilk;
+
+
+}
+
+.book-title {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.author-name {
+    font-size: 16px;
+    font-family: Vivaldi;
+    color: #666;
+    font-weight: bolder;
+}
+
+.genre{
+    font-size: 17px;
+    color: orange;
+    color-interpolation-filters: linearRGB;
+    border-color: black;
+
+}
+.buttons-div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.new-books{
+    display: flex;
+    justify-content: center;
+}
+
+.read-button, .delete-button{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+#show-dialog{
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    cursor: pointer;
+}
+
