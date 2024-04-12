@@ -96,10 +96,17 @@ const addBookToLibrary = () => {
             isRead: isReadValue
         };
 
-        console.log(book);
-        myLibrary.push(book);
-        renderBooks(myLibrary);
-        dialog.close();
+        if(book.title === '' || book.authorName === '' || book.genre === ''){
+            return false;
+        }
+        else{
+            myLibrary.push(book);
+            renderBooks(myLibrary);
+            dialog.close();
+        }
+        // myLibrary.push(book);
+        // renderBooks(myLibrary);
+        // dialog.close();
     });
 }
 addBookToLibrary();
